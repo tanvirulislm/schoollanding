@@ -15,12 +15,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    /> -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/others/style.css" />
     <title>EduSphere</title>
   </head>
   <body>
     <section class="bg-gradient-to-br from-white to-blue-100">
-      <header class="">
+      <header class="max-w-[1300px] mx-auto">
         <div
           class="container mx-auto flex justify-between items-center py-4 px-6"
         >
@@ -33,46 +42,51 @@
           <nav class="hidden md:flex space-x-6 font-medium">
             <a
               href="#"
-              class="text-gray-700 hover:text-[#3A77EF] transition duration-300"
+              class="text-gray-700 text-sm hover:text-[#3A77EF] transition duration-300"
               >Home</a
             >
             <a
               href="#"
-              class="text-gray-700 hover:text-[#3A77EF] transition duration-300"
+              class="text-gray-700 text-sm hover:text-[#3A77EF] transition duration-300"
               >About</a
             >
             <a
               href="#"
-              class="text-gray-700 hover:text-[#3A77EF] transition duration-300"
+              class="text-gray-700 text-sm hover:text-[#3A77EF] transition duration-300"
               >Programs</a
             >
             <a
               href="#"
-              class="text-gray-700 hover:text-[#3A77EF] transition duration-300"
+              class="text-gray-700 text-sm hover:text-[#3A77EF] transition duration-300"
               >Contact</a
             >
           </nav>
 
           <div class="flex items-center space-x-4">
-            <a
-              href="#"
-              class="text-gray-700 hover:text-[#3A77EF] transition duration-300 hidden md:block font-medium"
-              >Sign Up</a
-            >
             <button
-              class="group relative inline-flex items-center justify-center overflow-hidden rounded-md bg-[#3A77EF] px-4 py-2 font-medium text-white duration-500 text-sm cursor-pointer"
+              class="group relative inline-flex h-9 items-center justify-center overflow-hidden rounded-md border border-gray-300 bg-white px-3 font-medium text-gray-800 text-sm cursor-pointer"
+            >
+              <span
+                class="absolute h-0 w-0 rounded-full bg-gray-200 transition-all duration-300 group-hover:h-32 group-hover:w-32"
+              ></span>
+              <span class="relative">Sign In</span>
+            </button>
+
+            <button
+              class="group relative inline-flex items-center justify-center overflow-hidden gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-blue-600 text-white hover:bg-blue-500 h-9 rounded-md px-3 cursor-pointer"
             >
               <div
                 class="translate-y-0 transition group-hover:-translate-y-[150%]"
               >
-                Demo Login
+                Get Started
               </div>
               <div
-                class="absolute translate-y-[150%] transition group-hover:translate-y-0"
+                class="absolute inset-0 flex items-center justify-center translate-y-[150%] transition group-hover:translate-y-0"
               >
-                Demo Login
+                Get Started
               </div>
             </button>
+
             <button
               id="mobile-menu-button"
               class="md:hidden focus:outline-none"
@@ -118,38 +132,39 @@
       <div class="py-32">
         <div class="container mx-auto text-center">
           <div
-            class="inline-flex items-center border border-[#3A77EF] bg-[#E0EBFB] rounded-full px-4 py-2 mb-4"
+            class="inline-flex items-center border border-[#3A77EF] bg-[#E0EBFB] rounded-full px-4 py-[6px] mb-4"
           >
             <i class="fas fa-graduation-cap text-[#3A77EF]"></i>
-            <h4 class="text-sm font-semibold ml-2 text-[#020A1A]">
+            <h5 class="text-sm font-semibold ml-2 text-[#020A1A]">
               Complete Education Management System
-            </h4>
+            </h5>
           </div>
 
-          <h1 class="text-4xl md:text-5xl font-bold text-[#020A1A] mb-6">
-            Effortless Efficiency for your institution
+          <h1
+            class="text-7xl leading-tight md:text-5xl font-semibold text-[#020A1A] max-w-3xl mx-auto mb-6"
+          >
+            The Learning Platform for the Modern Classroom
           </h1>
 
-          <p class="text-lg text-gray-700 mb-8">
-            Transform the way you manage education. <br />
-            Seamless. Intelligent. Ready. <br />
-            School, college, madrasah, university, medical college — no matter
-            your institution, it's built for you.
+          <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto py-2">
+            Transform your educational experience with Eduflow's intuitive
+            learning management system. Design engaging courses, track student
+            progress, and foster collaboration—all in one platform.
           </p>
 
-          <div class="flex justify-center space-x-2">
+          <div class="flex justify-center space-x-2 space-y-2">
             <button
               class="group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-md bg-[#3A77EF] px-4 font-medium text-white duration-500 text-sm cursor-pointer"
             >
               <div
                 class="translate-y-0 transition group-hover:-translate-y-[150%]"
               >
-                Get Started
+                Start Free Trial
               </div>
               <div
                 class="absolute translate-y-[150%] transition group-hover:translate-y-0"
               >
-                Get Started
+                Start Free Trial
               </div>
             </button>
             <button
@@ -158,7 +173,7 @@
               <span
                 class="absolute h-0 w-0 rounded-full bg-blue-200 transition-all duration-300 group-hover:h-32 group-hover:w-32"
               ></span>
-              <span class="relative">Contact Us</span>
+              <span class="relative">Demo Video</span>
             </button>
           </div>
         </div>
@@ -200,7 +215,7 @@
 
           <div class="relative bg-white rounded-lg shadow-md p-6">
             <div
-              class="absolute top-0 left-0 bg-[#4CAF50] rounded-tl-lg rounded-br-2xl w-12 h-12 flex items-center justify-center"
+              class="absolute top-0 left-0 bg-[#3A77EF] rounded-tl-lg rounded-br-2xl w-12 h-12 flex items-center justify-center"
             >
               <i class="fas fa-chalkboard-teacher text-white text-xl"></i>
             </div>
@@ -215,7 +230,7 @@
 
           <div class="relative bg-white rounded-lg shadow-md p-6">
             <div
-              class="absolute top-0 left-0 bg-[#6366F1] rounded-tl-lg rounded-br-2xl w-12 h-12 flex items-center justify-center"
+              class="absolute top-0 left-0 bg-[#3A77EF] rounded-tl-lg rounded-br-2xl w-12 h-12 flex items-center justify-center"
             >
               <i class="fas fa-calendar-alt text-white text-xl"></i>
             </div>
@@ -230,7 +245,7 @@
 
           <div class="relative bg-white rounded-lg shadow-md p-6">
             <div
-              class="absolute top-0 left-0 bg-[#EF5350] rounded-tl-lg rounded-br-2xl w-12 h-12 flex items-center justify-center"
+              class="absolute top-0 left-0 bg-[#3A77EF] rounded-tl-lg rounded-br-2xl w-12 h-12 flex items-center justify-center"
             >
               <i class="fas fa-money-bill-wave text-white text-xl"></i>
             </div>
@@ -241,6 +256,168 @@
               Automate fee collection, process online payments, and generate
               financial reports with ease.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="py-20 md:py-32 bg-gray-50">
+      <div class="container px-4 lg:px-8 mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16 md:mb-24">
+          <span class="text-sm font-medium text-blue-600 mb-2 block"
+            >Features</span
+          >
+          <h2 class="text-3xl md:text-4xl font-semibold mb-4">
+            Everything you need for modern education
+          </h2>
+          <p class="text-lg text-gray-600">
+            Our platform combines powerful learning tools with an intuitive
+            interface to create an exceptional educational experience for
+            educators and students alike.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="fade-in">
+            <div
+              class="h-full bg-white rounded-lg p-6 shadow-sm border border-blue-100 hover:shadow-md hover:border-blue-200 transition-all"
+            >
+              <div
+                class="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-blue-100 text-blue-600"
+              >
+                <i class="ri-book-open-line text-2xl"></i>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">
+                Intuitive Course Builder
+              </h3>
+              <p class="text-gray-600">
+                Easily create and organize engaging learning content with our
+                drag-and-drop interface.
+              </p>
+            </div>
+          </div>
+
+          <div class="fade-in">
+            <div
+              class="h-full bg-white rounded-lg p-6 shadow-sm border border-blue-100 hover:shadow-md hover:border-blue-200 transition-all"
+            >
+              <div
+                class="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-blue-100 text-blue-600"
+              >
+                <i class="ri-bar-chart-2-line text-2xl"></i>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">
+                Comprehensive Analytics
+              </h3>
+              <p class="text-gray-600">
+                Track student progress and engagement with detailed insights and
+                visualization tools.
+              </p>
+            </div>
+          </div>
+
+          <div class="fade-in">
+            <div
+              class="h-full bg-white rounded-lg p-6 shadow-sm border border-blue-100 hover:shadow-md hover:border-blue-200 transition-all"
+            >
+              <div
+                class="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-blue-100 text-blue-600"
+              >
+                <i class="ri-message-3-line text-2xl"></i>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">
+                Collaborative Discussions
+              </h3>
+              <p class="text-gray-600">
+                Foster community learning with threaded discussions, feedback,
+                and commenting tools.
+              </p>
+            </div>
+          </div>
+
+          <div class="fade-in">
+            <div
+              class="h-full bg-white rounded-lg p-6 shadow-sm border border-blue-100 hover:shadow-md hover:border-blue-200 transition-all"
+            >
+              <div
+                class="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-blue-100 text-blue-600"
+              >
+                <i class="ri-group-line text-2xl"></i>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">Group Management</h3>
+              <p class="text-gray-600">
+                Organize students into custom groups for targeted learning and
+                team projects.
+              </p>
+            </div>
+          </div>
+
+          <div class="fade-in">
+            <div
+              class="h-full bg-white rounded-lg p-6 shadow-sm border border-blue-100 hover:shadow-md hover:border-blue-200 transition-all"
+            >
+              <div
+                class="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-blue-100 text-blue-600"
+              >
+                <i class="ri-flashlight-line text-2xl"></i>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">Automated Workflows</h3>
+              <p class="text-gray-600">
+                Save time with automated grading, notifications, and learning
+                pathways.
+              </p>
+            </div>
+          </div>
+
+          <div class="fade-in">
+            <div
+              class="h-full bg-white rounded-lg p-6 shadow-sm border border-blue-100 hover:shadow-md hover:border-blue-200 transition-all"
+            >
+              <div
+                class="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-blue-100 text-blue-600"
+              >
+                <i class="ri-global-line text-2xl"></i>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">Global Accessibility</h3>
+              <p class="text-gray-600">
+                Support learners worldwide with multi-language support and
+                accessibility features.
+              </p>
+            </div>
+          </div>
+
+          <div class="fade-in">
+            <div
+              class="h-full bg-white rounded-lg p-6 shadow-sm border border-blue-100 hover:shadow-md hover:border-blue-200 transition-all"
+            >
+              <div
+                class="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-blue-100 text-blue-600"
+              >
+                <i class="ri-time-line text-2xl"></i>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">Flexible Scheduling</h3>
+              <p class="text-gray-600">
+                Set custom pacing, due dates, and learning schedules tailored to
+                your needs.
+              </p>
+            </div>
+          </div>
+
+          <div class="fade-in">
+            <div
+              class="h-full bg-white rounded-lg p-6 shadow-sm border border-blue-100 hover:shadow-md hover:border-blue-200 transition-all"
+            >
+              <div
+                class="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-blue-100 text-blue-600"
+              >
+                <i class="ri-shield-line text-2xl"></i>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">Secure Assessment</h3>
+              <p class="text-gray-600">
+                Conduct secure online exams with proctoring and anti-cheating
+                measures.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -385,6 +562,323 @@
         </div>
       </div>
     </section> -->
+
+    <!-- <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4 text-center">
+        Simple, transparent pricing
+      </h2>
+      <p class="text-gray-600 text-center mb-8">
+        Choose the plan that works best for your educational needs. All plans
+        include core features to get you started.
+      </p>
+
+      <div class="flex justify-center mb-6">
+        <div class="toggle-button">
+          <span id="monthly" class="active">Monthly</span>
+          <span id="yearly">Yearly (Save 20%)</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="plan">
+          <h3 class="text-xl font-semibold mb-2">Basic</h3>
+          <p class="text-gray-600 mb-4">For individuals and small classes</p>
+          <div class="price">
+            <span class="text-4xl font-bold">$9</span
+            ><span class="text-gray-600">/month</span>
+          </div>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded mt-4">
+            Get Started
+          </button>
+          <ul class="plan-features">
+            <li>Up to 50 active students</li>
+            <li>Basic course builder</li>
+            <li>Assignments & quizzes</li>
+            <li>Student progress tracking</li>
+            <li>Email support</li>
+          </ul>
+        </div>
+
+        <div class="plan popular">
+          <div
+            class="bg-blue-100 text-blue-600 px-2 py-1 rounded-full text-xs inline-block mb-2"
+          >
+            Most Popular
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Professional</h3>
+          <p class="text-gray-600 mb-4">For growing educational programs</p>
+          <div class="price">
+            <span class="text-4xl font-bold">$29</span
+            ><span class="text-gray-600">/month</span>
+          </div>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded mt-4">
+            Start Free Trial
+          </button>
+          <ul class="plan-features">
+            <li>Up to 500 active students</li>
+            <li>Advanced course builder</li>
+            <li>Custom assessments</li>
+            <li>Advanced analytics</li>
+            <li>Discussion forums</li>
+            <li>Group projects</li>
+            <li>Priority support</li>
+          </ul>
+        </div>
+
+        <div class="plan">
+          <h3 class="text-xl font-semibold mb-2">Enterprise</h3>
+          <p class="text-gray-600 mb-4">For institutions and organizations</p>
+          <div class="price">
+            <span class="text-4xl font-bold">$99</span
+            ><span class="text-gray-600">/month</span>
+          </div>
+          <button class="bg-gray-600 text-white px-4 py-2 rounded mt-4">
+            Contact Sales
+          </button>
+          <ul class="plan-features">
+            <li>Unlimited active students</li>
+            <li>Custom integrations</li>
+            <li>Advanced security features</li>
+            <li>Dedicated account manager</li>
+            <li>White labeling options</li>
+            <li>API access</li>
+            <li>24/7 premium support</li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container mx-auto px-4 py-16 max-w-7xl">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <p class="text-sm font-semibold text-blue-600 mb-2">Pricing</p>
+        <h1 class="text-3xl md:text-4xl font-semibold text-gray-900">
+          Simple, transparent pricing
+        </h1>
+        <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          Choose the plan that works best for your educational needs. All plans
+          include core features to get you started.
+        </p>
+      </div>
+
+      <!-- Toggle Switch -->
+      <!-- <div class="flex justify-center items-center space-x-4 mb-12">
+        <span class="font-medium text-gray-700" id="monthly-label"
+          >Monthly</span
+        >
+        <div
+          class="relative inline-block w-16 h-8 transition duration-200 ease-in-out"
+        >
+          <input
+            type="checkbox"
+            id="billing-toggle"
+            class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer top-1 left-1 transition-all duration-300 ease-in-out"
+          />
+          <label
+            for="billing-toggle"
+            class="toggle-label block overflow-hidden h-8 rounded-full bg-gray-300 cursor-pointer"
+          ></label>
+        </div>
+        <span class="font-medium text-gray-500" id="yearly-label"
+          >Yearly <span class="text-sm text-green-600">Save 20%</span></span
+        >
+      </div> -->
+
+      <div class="flex justify-center mb-8">
+        <div class="toggle-container">
+          <div class="toggle-slider" id="toggle-slider"></div>
+          <div class="toggle-option active" id="monthly-option">Monthly</div>
+          <div class="toggle-option ml-2" id="yearly-option">
+            Yearly <span class="text-xs text-blue-200">Save 20%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing Cards -->
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Basic Plan -->
+        <div
+          class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200"
+        >
+          <div class="p-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-3">Basic</h2>
+            <p class="text-gray-600 mb-6">For individuals and small classes</p>
+            <div class="flex items-baseline mb-6">
+              <span class="text-3xl font-bold" id="basic-price">$9</span>
+              <span class="text-gray-500 ml-1">/month</span>
+            </div>
+            <button
+              class="w-full cursor-pointer bg-gray-800 text-white py-2 rounded-md hover:bg-gray-700 transition duration-300"
+            >
+              Get Started
+            </button>
+          </div>
+          <div class="border-t border-gray-200 p-6 space-y-4">
+            <div class="flex items-start text-sm">
+              <div class="flex-shrink-0">
+                <i class="fa-regular fa-circle-check text-blue-500"></i>
+              </div>
+              <p class="ml-2 text-gray-600">Up to 50 active students</p>
+            </div>
+            <div class="flex items-start text-sm">
+              <div class="flex-shrink-0">
+                <i class="fa-regular fa-circle-check text-blue-500"></i>
+              </div>
+              <p class="ml-2 text-gray-600">Basic course builder</p>
+            </div>
+            <div class="flex items-start text-sm">
+              <div class="flex-shrink-0">
+                <i class="fa-regular fa-circle-check text-blue-500"></i>
+              </div>
+              <p class="ml-2 text-gray-600">Assignments & quizzes</p>
+            </div>
+            <div class="flex items-start text-sm">
+              <div class="flex-shrink-0">
+                <i class="fa-regular fa-circle-check text-blue-500"></i>
+              </div>
+              <p class="ml-2 text-gray-600">Student progress tracking</p>
+            </div>
+            <div class="flex items-start text-sm">
+              <div class="flex-shrink-0">
+                <i class="fa-regular fa-circle-check text-blue-500"></i>
+              </div>
+              <p class="ml-2 text-gray-600">Email support</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Plan -->
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden border border-2 border-blue-200 transform scale-105 md:scale-100 md:translate-y-0"
+        >
+          <div class="bg-blue-50 py-2 text-center">
+            <span class="text-sm font-medium text-blue-600">Most Popular</span>
+          </div>
+          <div class="p-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-3">
+              Professional
+            </h2>
+            <p class="text-gray-600 mb-6">For growing educational programs</p>
+            <div class="flex items-baseline mb-6">
+              <span class="text-3xl font-bold" id="pro-price">$29</span>
+              <span class="text-gray-500 ml-1">/month</span>
+            </div>
+            <button
+              class="w-full cursor-pointer bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition duration-300"
+            >
+              Start Free Trial
+            </button>
+          </div>
+          <div class="border-t border-gray-200 p-6 space-y-4">
+            <div class="flex items-start text-sm">
+              <div class="flex-shrink-0">
+                <i class="fa-regular fa-circle-check text-blue-500"></i>
+              </div>
+              <p class="ml-2 text-gray-600">Up to 500 active students</p>
+            </div>
+            <div class="flex items-start text-sm">
+              <div class="flex-shrink-0">
+                <i class="fa-regular fa-circle-check text-blue-500"></i>
+              </div>
+              <p class="ml-2 text-gray-600">Advanced course builder</p>
+            </div>
+            <div class="flex items-start text-sm">
+              <div class="flex-shrink-0">
+                <i class="fa-regular fa-circle-check text-blue-500"></i>
+              </div>
+              <p class="ml-2 text-gray-600">Custom assessments</p>
+            </div>
+            <div class="flex items-start text-sm">
+              <div class="flex-shrink-0">
+                <i class="fa-regular fa-circle-check text-blue-500"></i>
+              </div>
+              <p class="ml-2 text-gray-600">Advanced analytics</p>
+            </div>
+            <div class="flex items-start text-sm">
+              <div class="flex-shrink-0">
+                <i class="fa-regular fa-circle-check text-blue-500"></i>
+              </div>
+              <p class="ml-2 text-gray-600">Discussion forums</p>
+            </div>
+            <div class="flex items-start text-sm">
+              <div class="flex-shrink-0">
+                <i class="fa-regular fa-circle-check text-blue-500"></i>
+              </div>
+              <p class="ml-2 text-gray-600">Group projects</p>
+            </div>
+            <div class="flex items-start text-sm">
+              <div class="flex-shrink-0">
+                <i class="fa-regular fa-circle-check text-blue-500"></i>
+              </div>
+              <p class="ml-2 text-gray-600">Priority support</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div
+          class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200"
+        >
+          <div class="p-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-3">Enterprise</h2>
+            <p class="text-gray-600 mb-6">For institutions and organizations</p>
+            <div class="flex items-baseline mb-6">
+              <span class="text-3xl font-bold" id="enterprise-price">$99</span>
+              <span class="text-gray-500 ml-1">/month</span>
+            </div>
+            <button
+              class="w-full cursor-pointer bg-gray-800 text-white py-2 rounded-md hover:bg-gray-700 transition duration-300"
+            >
+              Contact Sales
+            </button>
+          </div>
+          <div class="border-t border-gray-200 p-6 space-y-4">
+            <div class="flex items-start text-sm">
+              <div class="flex-shrink-0">
+                <i class="fa-regular fa-circle-check text-blue-500"></i>
+              </div>
+              <p class="ml-2 text-gray-600">Unlimited active students</p>
+            </div>
+            <div class="flex items-start text-sm">
+              <div class="flex-shrink-0">
+                <i class="fa-regular fa-circle-check text-blue-500"></i>
+              </div>
+              <p class="ml-2 text-gray-600">Custom integrations</p>
+            </div>
+            <div class="flex items-start text-sm">
+              <div class="flex-shrink-0">
+                <i class="fa-regular fa-circle-check text-blue-500"></i>
+              </div>
+              <p class="ml-2 text-gray-600">Advanced security features</p>
+            </div>
+            <div class="flex items-start text-sm">
+              <div class="flex-shrink-0">
+                <i class="fa-regular fa-circle-check text-blue-500"></i>
+              </div>
+              <p class="ml-2 text-gray-600">Dedicated account manager</p>
+            </div>
+            <div class="flex items-start text-sm">
+              <div class="flex-shrink-0">
+                <i class="fa-regular fa-circle-check text-blue-500"></i>
+              </div>
+              <p class="ml-2 text-gray-600">White-labeling options</p>
+            </div>
+            <div class="flex items-start text-sm">
+              <div class="flex-shrink-0">
+                <i class="fa-regular fa-circle-check text-blue-500"></i>
+              </div>
+              <p class="ml-2 text-gray-600">API access</p>
+            </div>
+            <div class="flex items-start text-sm">
+              <div class="flex-shrink-0">
+                <i class="fa-regular fa-circle-check text-blue-500"></i>
+              </div>
+              <p class="ml-2 text-gray-600">24/7 premium support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Scripts -->
     <script src="assets/others/custom.js"></script>
     <script
@@ -395,253 +889,3 @@
     ></script>
   </body>
 </html>
-
-
-
-
-
-<!-- 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Learning Platform</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        font-family: "Inter", sans-serif;
-      }
-    </style>
-  </head>
-  <body>
-    <section class="bg-gradient-to-r from-pink-100 to-blue-100">
-      <nav class="p-4">
-        <div class="container mx-auto flex items-center justify-between">
-          <div class="flex items-center">
-            <img src="assets/logo.svg" alt="Dreams LMS Logo" class="h-8 mr-2" />
-          </div>
-
-          <div class="flex-grow">
-            <div class="flex items-center justify-center space-x-6">
-              <a href="#" class="text-gray-800 hover:text-indigo-600"
-                >Home <i class="fas fa-chevron-down ml-1"></i
-              ></a>
-              <a href="#" class="text-gray-800 hover:text-indigo-600"
-                >Instructor <i class="fas fa-chevron-down ml-1"></i
-              ></a>
-              <a href="#" class="text-gray-800 hover:text-indigo-600"
-                >Student <i class="fas fa-chevron-down ml-1"></i
-              ></a>
-              <a href="#" class="text-gray-800 hover:text-indigo-600"
-                >Pages <i class="fas fa-chevron-down ml-1"></i
-              ></a>
-              <a href="#" class="text-gray-800 hover:text-indigo-600"
-                >Blog <i class="fas fa-chevron-down ml-1"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="flex items-center justify-between space-x-4">
-            <a
-              href="#"
-              class="bg-white border border-blue-100 text-blue-600 px-4 py-2 rounded-full font-medium hover:bg-blue-100"
-              ><i class="fas fa-moon"></i
-            ></a>
-            <a
-              href="#"
-              class="bg-white border border-blue-100 text-blue-600 px-4 py-2 rounded-full font-medium hover:bg-blue-100"
-              >Signin</a
-            >
-            <a
-              href="#"
-              class="bg-blue-100 border border-purple-600 text-purple-600 px-4 py-2 rounded-full font-medium hover:bg-purple-100"
-              >Signup</a
-            >
-          </div>
-        </div>
-      </nav>
-    </section>
-
-    <div class="bg-white py-12 px-4 sm:px-6 lg:px-8">
-      <div class="max-w-7xl mx-auto">
-        <div class="flex justify-between items-center mb-8">
-          <h2 class="text-[18px] font-semibold text-[#f66962] mb-2">
-            Favourite Course
-          </h2>
-          <button
-            class="bg-transparent border-[3px] border-[#b4a7f5] text-[#392c7d] font-medium rounded-[46.9159px] min-w-[150px] py-2 px-4 hover:bg-[#917cf6] hover:border-[#917cf6] hover:text-white"
-          >
-            All Categories
-          </button>
-        </div>
-        <h3 class="text-3xl font-bold text-gray-900 mb-4">Top Category</h3>
-        <p class="text-gray-600 font-semibold mb-10 mr-[500px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean
-          accumsan bibendum gravida maecenas augue elementum et neque.
-          Suspendisse imperdiet.
-        </p>
-
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 mt-[20px]"
-        >
-          <div
-            class="bg-gray-50 rounded-lg p-6 border border-[#413655] hover:text-white hover:bg-[#413655]"
-          >
-            <div class="flex justify-center mb-4">
-              <img
-                src="assets/object.webp"
-                alt="Angular Icon"
-                class="h-12 w-12"
-              />
-            </div>
-            <h4 class="text-lg font-semibold text-gray-900 text-center mb-2">
-              Angular Development
-            </h4>
-            <p class="text-sm text-gray-500 text-center">40 Instructors</p>
-          </div>
-
-          <div class="bg-gray-50 rounded-lg shadow-md p-6">
-            <div class="flex justify-center mb-4">
-              <img
-                src="path-to-docker-icon.png"
-                alt="Docker Icon"
-                class="h-12 w-12"
-              />
-            </div>
-            <h4 class="text-lg font-semibold text-gray-900 text-center mb-2">
-              Docker Development
-            </h4>
-            <p class="text-sm text-gray-500 text-center">45 Instructors</p>
-          </div>
-
-          <div class="bg-gray-50 rounded-lg shadow-md p-6">
-            <div class="flex justify-center mb-4">
-              <img
-                src="path-to-node-icon.png"
-                alt="Node Icon"
-                class="h-12 w-12"
-              />
-            </div>
-            <h4 class="text-lg font-semibold text-gray-900 text-center mb-2">
-              Node JS Frontend
-            </h4>
-            <p class="text-sm text-gray-500 text-center">40 Instructors</p>
-          </div>
-
-          <div class="bg-gray-50 rounded-lg shadow-md p-6">
-            <div class="flex justify-center mb-4">
-              <img
-                src="path-to-swift-icon.png"
-                alt="Swift Icon"
-                class="h-12 w-12"
-              />
-            </div>
-            <h4 class="text-lg font-semibold text-gray-900 text-center mb-2">
-              Swift Development
-            </h4>
-            <p class="text-sm text-gray-500 text-center">23 Instructors</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div class="space-y-4">
-          <div class="flex items-baseline">
-            <img src="assets/logo.svg" alt="Dreams LMS Logo" class="h-8 mr-2" />
-          </div>
-          <p class="text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-            consequat mauris Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Ut consequat mauris.
-          </p>
-        </div>
-
-        <div class="space-y-4">
-          <h3 class="font-semibold text-lg text-[#0a142f]">For Instructor</h3>
-          <ul class="space-y-2">
-            <li>
-              <a href="#" class="text-gray-700 hover:text-indigo-600"
-                >Profile</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-gray-700 hover:text-indigo-600">Login</a>
-            </li>
-            <li>
-              <a href="#" class="text-gray-700 hover:text-indigo-600"
-                >Register</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-gray-700 hover:text-indigo-600"
-                >Instructor Dashboard</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="space-y-4">
-          <h3 class="font-semibold text-lg text-[#0a142f]">For Student</h3>
-          <ul class="space-y-2">
-            <li>
-              <a href="#" class="text-gray-700 hover:text-indigo-600"
-                >Profile</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-gray-700 hover:text-indigo-600">Login</a>
-            </li>
-            <li>
-              <a href="#" class="text-gray-700 hover:text-indigo-600"
-                >Register</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-gray-700 hover:text-indigo-600"
-                >Student Dashboard</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="space-y-4">
-          <h3 class="font-semibold text-lg font-[#0a142f]">News Letter</h3>
-          <input
-            type="email"
-            placeholder="Enter your email address"
-            class="border rounded-md px-4 py-2 w-full"
-          />
-          <div class="flex items-center space-x-2">
-            <i class="fas fa-map-marker-alt text-gray-500"></i>
-            <p class="text-gray-600 text-sm">
-              3556 Beech Street, San Francisco, California, CA 94108
-            </p>
-          </div>
-          <div class="flex items-center space-x-2">
-            <i class="fas fa-envelope text-gray-500"></i>
-            <p class="text-gray-600 text-sm">dreamslms@example.com</p>
-          </div>
-          <div class="flex items-center space-x-2">
-            <i class="fas fa-phone text-gray-500"></i>
-            <p class="text-gray-600 text-sm">+19 123-456-7890</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html> -->
-
